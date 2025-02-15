@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    color: yellow;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.slogan {
+    font-style: italic;
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.whatsapp-button:hover {
+    background-color: darkgreen;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Aplicación de animaciones */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.zoom-in {
+    animation: zoomIn 1.2s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 1.5s ease-in-out;
+}
