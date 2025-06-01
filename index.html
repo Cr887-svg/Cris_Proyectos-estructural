@@ -13,32 +13,47 @@
       color: #333;
       text-align: center;
     }
+
     header {
       background-color: #2c3e50;
       color: white;
       padding: 20px;
     }
+
     img.logo {
       width: 150px;
       height: auto;
       margin-top: 10px;
     }
+
     h1 {
       margin: 10px 0;
     }
+
     .galeria {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       margin: 20px;
     }
+
+    .galeria a {
+      text-decoration: none;
+    }
+
     .galeria img {
       width: 200px;
       margin: 10px;
       border: 2px solid #2c3e50;
       border-radius: 5px;
       cursor: pointer;
+      transition: transform 0.2s;
     }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
     footer {
       background-color: #2c3e50;
       color: white;
@@ -49,21 +64,24 @@
 </head>
 <body>
 
+  <!-- Cabecera con logo y nombre -->
   <header>
     <img src="70910cb4-af63-479d-a20b-1f85348a2e65.png" alt="Logo ESTRUCTIVA" class="logo">
     <h1>ESTRUCTIVA</h1>
     <p>ANÁLISIS Y DISEÑO ESTRUCTURAL CON LÓGICA</p>
   </header>
 
+  <!-- Galería de imágenes que enlazan a los PDFs -->
   <section class="galeria">
     <a href="columna.pdf" target="_blank">
-      <img src="colunna_page-0001.jpg" alt="Columna">
+      <img src="columna_page-0001.jpg" alt="Columna">
     </a>
     <a href="Desague y VEntilacion.pdf" target="_blank">
       <img src="Desague y VEntilacion_page-0001.jpg" alt="Desagüe y Ventilación">
     </a>
   </section>
 
+  <!-- Pie de página con datos -->
   <footer>
     <p>Contacto: tuemail@gmail.com | WhatsApp: +51 999 999 999</p>
     <p>© 2025 ESTRUCTIVA. Todos los derechos reservados.</p>
